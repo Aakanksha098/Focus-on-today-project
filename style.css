@@ -1,0 +1,162 @@
+body{
+    background-color: rgba(72,163,0,0.07);
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+main{
+    padding:0 16px 32px;
+}
+.heading{
+    font-size: 64px;
+    color: #48A300;
+    text-align: center;
+}
+.heading-span{
+    color:#61481c
+}
+.sub-heading{
+    color: black;
+    font-size:30px ;
+}
+.container{
+    background-color:#FBFBFB;
+    max-width: 660px;
+    margin-inline: auto;
+    border-radius: 10px;
+    padding:32px 46px;
+    box-shadow: 0 0 8px 0px rgba(0,0,0,0.1);
+
+}
+.sun-icon{
+width: 50px;
+height: 50px;
+vertical-align: middle;
+margin: 15px;
+animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from{transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+    
+}
+
+.label{
+    font-size: 14px;
+    color:#858585;
+    margin-bottom: 18px;
+}
+.progress-bar{
+    height: 30px;
+    background-color: rgba(72,163,0,0.1);
+    border-radius: 15px;
+    margin-bottom: 42px;
+
+}
+.progress-value{
+    height: 100%;
+    width: 0;
+    background-color: #48A300;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out
+}
+.progress-value span{
+    padding-left: 20px;
+    min-width: max-content;
+}
+.error-label{
+    font-size : 14px;
+    color: red;
+    margin-top:10px;
+    display:none;
+}
+.show-error .error-label{
+    display: block;
+}
+
+.goal-container{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding:0 22px;
+    background-color: white;
+    margin-bottom: 46px ;
+    
+   
+}
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.goal-input{
+    border:none;
+    outline:none;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;
+    padding-left :24px;
+    align-self: stretch;
+    font-weight: 500;
+}
+.goal-input::placeholder{
+    color: #858585;
+}
+.footer{
+   font-weight: 500;
+   text-align: center;
+   font-size: 25px; 
+   margin-bottom: 64px;
+
+}
+.creator{
+    font-weight: 500;
+   text-align: center;
+   font-size: 16px; 
+   color:#858585;
+}
+.completed .checkbox{
+    background-color:#48A300 ;
+    border:#48A300;
+
+}
+.check-icon{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.completed .check-icon{
+    display: block;
+}
+.completed .goal-input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+@media (max-width:760px){
+    .heading{
+        font-size: 32px;
+    }
+    .sub-heading{
+        padding: 16px 32px;
+    }
+    .goal-container{
+        height: 64px;
+        margin-bottom: 24px;
+    }
+}
